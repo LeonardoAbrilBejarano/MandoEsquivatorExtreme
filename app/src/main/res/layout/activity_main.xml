@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leonardo.mandojavav2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:fontFamily="casual"
+        android:text="Mando Esquivator Extreme" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="left"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="sendLeft"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="top"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="130dp"
+        android:onClick="sendTop"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bot"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="130dp"
+        android:onClick="sendBot"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="240dp"
+        android:onClick="sendRight"/>
+    <Button
+        android:id="@+id/btncontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar con mando"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="80dp"
+        android:onClick="makeContact"/>
+    <EditText
+        android:id="@+id/ed1_ip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="172.16.6.135"
+        android:layout_below="@id/btncontact"/>
+    <EditText
+        android:id="@+id/ed2_port"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="1234"
+        android:layout_below="@id/ed1_ip"/>
+
+
+</RelativeLayout>
